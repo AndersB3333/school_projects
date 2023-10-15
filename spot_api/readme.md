@@ -1,0 +1,3 @@
+This project was apart of a class at BI Norwegian Business School. The project consists of two tasks: * Predicting whether a song will become popular
+* Recommending a song based on the song featuers
+The metric for whether a song is popular is if the song featured on the Billboard Hot 100. Since I used a popularity chart in a dominantly English speaking country, all non-english songs were removed. This was a difficult task, where only 
