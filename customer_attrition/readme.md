@@ -1,0 +1,1 @@
+This project was from my Bachelor's where I learned about more about machine learning concepts. The data is clean, and is about data of a banks customers. The F1 score of the test set is ~0.954.
