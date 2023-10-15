@@ -1,0 +1,1 @@
+The purpose of this project is to learn more about the data processing objects used in PyTorch. Google Cloud GPU's were used to train these images. I've focused on the preprocessing part, and performance was not taken into account. The training loss and validation loss is fluctuating indicating a learning rate that's too high.
