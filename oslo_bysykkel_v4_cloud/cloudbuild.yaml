@@ -1,9 +1,9 @@
 version: "3.9"
 
 services:
- #steps:
-  #- name: 'docker/compose:1.26.2'
- #   args: ['up', '-d']
+ steps:
+  - name: 'docker/compose:1.26.2'
+    args: ['up', '-d']
 
   cloudsql-proxy:
     image: gcr.io/cloud-sql-connectors/cloud-sql-proxy:2.0.0
