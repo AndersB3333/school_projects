@@ -1,42 +1,5 @@
-version: "3.9"
-
-services:
- steps:
+steps:
   - name: 'docker/compose:1.26.2'
     args: ['up', '-d']
 
-  cloudsql-proxy:
-    image: gcr.io/cloud-sql-connectors/cloud-sql-proxy:2.0.0
-    volumes:
-      - type: bind
-        source: ~/.config/gcloud
-        target: /home/nonroot/.config/gcloud
-    ports:
-      - target: 5432
-        published: 5432
-    networks:
-      - my-app
-    command: --address 0.0.0.0 --port 5432 oslo-bicycle:europe-north1:oslo-bicycle
-     
-  my-app:
-    build:
-      context: ./
-      dockerfile: Dockerfile
-    ports: 
-      - 8080:80
-    networks:
-      - my-app
-    volumes:
-      - type: bind
-        source: ./
-        target: /app
-    env_file:
-      - ./secrets.env
-    depends_on:
-      - cloudsql-proxy
-
-
-networks:
-  my-app:
-    name: my-app
-    driver: bridge
+timeout: '200s'
