@@ -1,10 +1,9 @@
 from datetime import datetime
-from pathlib import Path
 import pandas as pd
 from to_database import connect_tcp_socket
 
 def fetch(dataset_url: str):
-    """Retrieving the data file from the link"""
+    """Retrieving the data file from the link, reduced to 200 for demo purposes"""
     df = pd.read_csv(dataset_url, nrows=200)
     return df
 
@@ -31,9 +30,10 @@ def etl_web_to_gcs_bicycle() -> None:
 
 
 def write_postgres(df: pd.DataFrame) -> None:
+    print("Hello")
     """Sending data to postgress database"""
     engine = connect_tcp_socket()
-    
+    # assumed that this is not the first job
     df.to_sql(con=engine, name='oslo_bicycle_db', if_exists="append")
 
 

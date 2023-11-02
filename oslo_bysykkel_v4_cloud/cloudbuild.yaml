@@ -1,8 +1,0 @@
-steps:
-  - name: 'docker/compose:1.26.2'
-    args: ['up']
-
-options:
-  logging: CLOUD_LOGGING_ONLY
-
-timeout: '200s'
