@@ -5,4 +5,4 @@ at BI Norwegian Business School. The instructions given from the instructors are
 to Sci-Kit-Leanrs program, with some exceptions such as optimize method is being used instead of
 fit method that sklearn has.
 
-Much credit should also be delegated to Ole Anders Bolle, and Duc Binh Minh.
+This was a group project which consisted of Ole Anders Bolle, Duc Binh Minh, and myself.
