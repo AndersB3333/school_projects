@@ -44,4 +44,4 @@ Conformal prediction offers a statistically sound, easy-to-implement method for 
 
 ## Credits: 
 This project was inspired by the book Practical Guide to Applied Conformal Prediction in Python: Learn and Apply the Best Uncertainty Frameworks to Your Industry Applications, authored by PhD Valeriy Manokhin.
-Data source Credit Card customers by Sakshi Goyal: https://www.kaggle.com/datasets/sakshigoyal7/credit-card-customers 
+Data source "Credit Card customers" by Sakshi Goyal: https://www.kaggle.com/datasets/sakshigoyal7/credit-card-customers 
