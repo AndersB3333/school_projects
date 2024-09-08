@@ -38,25 +38,10 @@ In the context of binary classification, conformal prediction outputs a predicti
 - **Conformal Prediction Application:** TCP is applied to the model to generate prediction sets for customer churn.
 - **Evaluation:** The performance of the model with and without TCP is compared, focusing on the accuracy of predictions and the calibration of prediction sets.
 
-## How to Run the Project
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/conformal-prediction-churn.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd conformal-prediction-churn
-   ```
-3. Install required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Run the Jupyter Notebook to explore the project:
-   ```bash
-   jupyter notebook conformal_prediction_churn.ipynb
-   ```
-
 ## Conclusion
 
 Conformal prediction offers a statistically sound, easy-to-implement method for enhancing traditional machine learning models by providing reliable uncertainty estimates. In this project, we apply TCP to predict credit card churn, demonstrating how conformal prediction can improve the trustworthiness of binary classification models. With its robustness, flexibility, and ease of use, conformal prediction is an excellent addition to any machine learning practitioner’s toolkit, particularly in cases where decisions carry significant consequences.
+
+## Credits: 
+This project was inspired by the book Practical Guide to Applied Conformal Prediction in Python: Learn and Apply the Best Uncertainty Frameworks to Your Industry Applications, authored by PhD Valeriy Manokhin.
+Data source Credit Card customers by Sakshi Goyal: https://www.kaggle.com/datasets/sakshigoyal7/credit-card-customers 
